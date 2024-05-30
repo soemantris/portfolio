@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+{% block content %}
+<div class="row justify-content-center">
+        <div class="col-md-7 mt-4">
+            <h4 class="mb-3">{{detail_project.title}}</h4>
+            <a href="{{detail_project.visit_site}}" style="color: #6f2abd;" class="text-decoration-none text-muted"><i class="bi bi-link-45deg fs-5"></i> Kungjungi website</a>
+            <p>{{detail_project.description|safe}}</p>
+        </div>
+</div>
+{% endblock content %}
